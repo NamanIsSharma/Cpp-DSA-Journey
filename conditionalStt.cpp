@@ -85,7 +85,7 @@ int main(){
     return 0;
 }*/
 
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 int main(){
     int n;
@@ -94,4 +94,4 @@ int main(){
 
     cout<<(n%2==0 ? "even" : "odd");      // ternary operator
     return 0;
-}
+}*/
