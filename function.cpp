@@ -56,6 +56,6 @@ int FactN(int n){
     return Fact;
 }
 int main(){
-    cout<<"Factorial = "<<FactN(7);
+    cout<<"Factorial = "<<FactN(9);
     return 0;
 }
