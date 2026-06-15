@@ -75,3 +75,21 @@ int main(){
     cout<<"x = "<<x<<endl;          // 5
     return 0;
 }*/
+
+#include<iostream>
+using namespace std;
+int SumOfDigits(int num){
+    int DigitSum = 0;
+
+    while(num>0){
+        int lastDigit = num % 10;
+        num = num/10;
+
+        DigitSum += lastDigit;
+    }
+    return DigitSum;
+}
+int main(){
+    cout<< "Sum of digits = "<< SumOfDigits(12345);
+    return 0;
+}
