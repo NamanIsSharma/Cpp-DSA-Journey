@@ -121,12 +121,13 @@ int main(){
     return 0;
 }*/
 
-#include<iostream>
+
+/*#include<iostream>
 using namespace std;
 
 bool isPrime(int n){
     
-    for(int i=2; i<=(n-1); i++){
+    for(int i=2; i<=(n-1); i++){     /// Prime No
         if(n%i==0)
         return false;
     }
@@ -143,5 +144,40 @@ int main(){
     else{
         cout<< "Non-Prime";
     }
+    return 0;
+}*/
+
+//////////  Print n prime no  ///////
+#include<iostream>
+using namespace std;
+
+bool isPrime(int num){               // prime fn
+    for(int i=2; i<=(num-1); i++){
+        if(num%i==0){
+            return false;
+        }
+        return true;
+    }
+}
+
+int printNprime(int n){
+    int count = 0;
+    int num = 2;
+    while(count<n){
+        if(isPrime(num)){
+            cout<<num<<" ";
+            count++;
+        }
+        num++;
+    }
+    return 0;
+}
+int main(){
+    int n;
+    cout<<"Enter n : ";
+    cin>>n;
+
+    printNprime(n);
+
     return 0;
 }
