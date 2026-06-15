@@ -46,11 +46,11 @@ int main(){
 }*/
 
 
-#include<iostream>
+/* #include<iostream>
 using namespace std;
 int FactN(int n){
     int Fact = 1;
-    for(int i=1; i<=n; i++){
+    for(int i=1; i<=n; i++){       // Factorial
         Fact = Fact*i;
     }
     return Fact;
@@ -58,4 +58,20 @@ int FactN(int n){
 int main(){
     cout<<"Factorial = "<<FactN(9);
     return 0;
+}*/
+
+
+///////////////  pass by value  /////////////
+/* #include<iostream>
+using namespace std;
+int changeX(int x){
+    x = 2*x;
+    cout<<"x = "<<x<<endl;           // 10
+    return 0;
 }
+int main(){
+    int x = 5;
+    changeX(x);
+    cout<<"x = "<<x<<endl;          // 5
+    return 0;
+}*/
