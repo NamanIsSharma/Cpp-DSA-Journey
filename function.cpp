@@ -160,7 +160,7 @@ bool isPrime(int num){               // prime fn
     }
 }
 
-int printNprime(int n){
+int printNprime(int n){          // print prime no.
     int count = 0;
     int num = 2;
     while(count<n){
