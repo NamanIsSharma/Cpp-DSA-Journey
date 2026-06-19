@@ -78,3 +78,25 @@ int main(){
     cout<< "\na = "<< a <<" b = "<< b;
 }*/
 
+
+///////  input-output a string /////////
+/* #include<iostream>
+using namespace std;
+int main(){
+    string s1;
+    string s2;
+    cin>> s1 >> s2;
+    cout<< s1 << " " << s2;
+    return 0;
+}*/
+
+/////// get a multi-words string  ///////
+#include <iostream>
+using namespace std;
+
+int main() {
+    string str;
+    getline(cin,str);
+    cout<<str;
+    return 0;
+}
