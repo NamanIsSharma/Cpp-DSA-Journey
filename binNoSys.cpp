@@ -44,3 +44,4 @@ int main(){
     cout << BinToDec(binNum) << endl;
     return 0;
 }
+
