@@ -41,7 +41,7 @@ int main() {
     }
 
     return 0;
-}*/
+}
 
 #include <iostream>
 using namespace std;
@@ -58,5 +58,68 @@ int main() {
         cout << marks[i] << endl;  //ForOutput
     }
     
+    return 0;
+}*/
+
+
+///////////  Smallest Element in an Array  /////////////
+/*#include <iostream>
+#include <climits>   // for int_max
+using namespace std;
+
+int main() {
+    int nums[] = {13,10,23,4,-1,2};
+    int size = 6;
+    
+    int smallest = INT_MAX;
+
+    for(int i=0; i<size; i++){
+        if(nums[i] < smallest){    // logic 1
+            smallest = nums[i];
+        }
+    }
+    cout << "Smallest = " << smallest << endl;
+    return 0;
+}*/
+
+//////////   largest element in an array ////
+/* #include <iostream>
+using namespace std;
+
+int main() {
+    int size = 6;
+    int nums[size];
+    for(int i=0; i<size; i++){
+        cin >> nums[i];
+    }
+
+    int largest = INT16_MIN;
+    for(int i=0; i<size; i++){
+        largest = max(largest, nums[i]);
+    }
+    cout << "Largest index = " << nums[largest];
+    return 0;
+}*/
+
+
+///// print Index of largest element in array  ////////////
+#include <iostream>
+using namespace std;
+
+int main() {
+    int nums[] = {12, 34, -42, 76, -89};
+    int size = 5;
+    int index = -1;  // -1 means index not find yet (initially)
+
+    int largest = INT32_MIN;
+    
+    for(int i=0; i<size; i++){
+        if(nums[i] > largest){
+        largest = nums[i];
+        index = i;  //index (i) of largest element
+        }
+    }
+    cout << "largest element = " << largest << endl;
+    cout << "index is : " << index << endl;
     return 0;
 }
