@@ -97,13 +97,13 @@ int main() {
     for(int i=0; i<size; i++){
         largest = max(largest, nums[i]);
     }
-    cout << "Largest index = " << nums[largest];
+    cout << "Largest = " << largest;
     return 0;
 }*/
 
 
 ///// print Index of largest element in array  ////////////
-#include <iostream>
+/* #include <iostream>
 using namespace std;
 
 int main() {
@@ -121,5 +121,31 @@ int main() {
     }
     cout << "largest element = " << largest << endl;
     cout << "index is : " << index << endl;
+    return 0;
+}*/
+
+
+////////  Linear Search ////////
+#include <iostream>
+using namespace std;
+int linearSearch(int arr[], int size, int target){
+    for(int i=0; i<size; i++){
+        if(arr[i] == target){
+            return i;  //FOUND
+        }
+    }
+    return -1;  //NOT FOUND
+}
+
+int main() {
+    int size = 5;
+    int arr[size];
+    
+    for(int i=0; i<size; i++){
+        cin >> arr[i];
+    }
+    int target = 34;
+
+    cout << linearSearch(arr, size, target) << endl;
     return 0;
 }
