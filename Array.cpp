@@ -126,7 +126,7 @@ int main() {
 
 
 ////////  Linear Search ////////
-#include <iostream>
+/* #include <iostream>
 using namespace std;
 int linearSearch(int arr[], int size, int target){
     for(int i=0; i<size; i++){
@@ -147,5 +147,31 @@ int main() {
     int target = 34;
 
     cout << linearSearch(arr, size, target) << endl;
+    return 0;
+}*/
+
+
+///////////  Reverse of an Array  //////////
+#include<iostream>
+using namespace std;
+
+int RevArray(int arr[], int size){
+    int start = 0, end = size-1;
+
+    while(start < end){
+        swap(arr[start], arr[end]);
+        start++;
+        end--;
+    }
+}
+int main(){
+    int arr[] = {12,34,56,78,90};
+    int size = 5;
+
+    RevArray(arr, size);
+
+    for(int i=0; i<size; i++){
+        cout << arr[i] << " ";
+    }
     return 0;
 }
