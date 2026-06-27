@@ -268,7 +268,7 @@ int main() {
     arr[maxIndex] = arr[minIndex];
     arr[minIndex] = temp;
 
-    for(int i=0; i<size; i++){
+    for(int i=0; i<size; i++){  // array after swapping
         cout << arr[i] << " ";
     }
     return 0;
