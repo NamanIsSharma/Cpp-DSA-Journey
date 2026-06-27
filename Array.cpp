@@ -215,7 +215,7 @@ int main() {
 
 
 //////////// product of elements in an array  ////////
-#include <iostream>
+/* #include <iostream>
 using namespace std;
 
 Mul_No_Array(int arr[], int size){
@@ -231,5 +231,45 @@ int main() {
     int size = 5;
 
     cout << Mul_No_Array(arr, size);
+    return 0;
+}*/
+
+
+/////// swap the max & min number of an array  ////////
+#include <iostream>
+#include <climits>
+using namespace std;
+
+int main() {
+    int arr[] = {12,34,43,-78,65};
+    int size = 5;
+
+    int maxValue = INT_MIN;
+    int minValue = INT_MAX;
+
+    int maxIndex = 0;
+    int minIndex = 0;
+
+    for(int i=0; i<size; i++){
+
+        if(arr[i] > maxValue){  //Getting max value and index
+            maxValue = arr[i];
+            maxIndex = i;
+        }
+        if(arr[i] < minValue){  //Getting min value and index
+            minValue = arr[i];
+            minIndex = i;
+        }
+    }
+
+    // swap min&max
+
+    int temp = arr[maxIndex];
+    arr[maxIndex] = arr[minIndex];
+    arr[minIndex] = temp;
+
+    for(int i=0; i<size; i++){
+        cout << arr[i] << " ";
+    }
     return 0;
 }
