@@ -236,7 +236,7 @@ int main() {
 
 
 /////// swap the max & min number of an array  ////////
-#include <iostream>
+/* #include <iostream>
 #include <climits>
 using namespace std;
 
@@ -270,6 +270,28 @@ int main() {
 
     for(int i=0; i<size; i++){  // array after swapping
         cout << arr[i] << " ";
+    }
+    return 0;
+}*/
+
+
+//////// max subarray sum (concept) #leetcode-53(kadane's algo - optimal approach) //////
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int arr[] = {12,10,34,25,-43,21};
+    int size = 6;
+
+    for(int st=0; st<size; st++){    // loop for starting the subarray
+        for(int end=st; end<size; end++){ // loop  for ending the subarray
+            for(int i=st; i<=end; i++){ // loop for traversing array from st to end
+                cout << arr[i];
+            }
+            cout << " ";
+        }
+        cout << endl;
     }
     return 0;
 }

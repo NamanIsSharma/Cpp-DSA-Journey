@@ -91,12 +91,25 @@ int main(){
 }*/
 
 /////// get a multi-words string  ///////
-#include <iostream>
+/* #include <iostream>
 using namespace std;
 
 int main() {
     string str;
     getline(cin,str);
     cout<<str;
+    return 0;
+}*/
+
+
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+int main() {
+    string s = "Naman";
+    int len = s.size();
+    s[len-1] = 'k';
+    cout << s[len-1];
     return 0;
 }
