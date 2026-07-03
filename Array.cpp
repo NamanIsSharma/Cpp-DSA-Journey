@@ -289,9 +289,9 @@ int main() {
             for(int i=st; i<=end; i++){ // loop for traversing array from st to end
                 cout << arr[i];
             }
-            cout << " ";
+            cout << " ";  // basically we print max subarrays here
         }
         cout << endl;
     }
     return 0;
-}
+}  
