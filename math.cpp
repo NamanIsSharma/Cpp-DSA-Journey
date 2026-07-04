@@ -82,7 +82,7 @@ int main() {
 
 
 //////////// palindrome of a number /////////////
-#include <iostream>
+/* #include <iostream>
 using namespace std;
 bool palindrome(int n){
     int rev = 0;
@@ -103,5 +103,41 @@ int main() {
     
     cout << palindrome(n) << endl;
     
+    return 0;
+}*/
+
+///// check for Armstrong no //////////
+/* #include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    int sum = 0;
+    cin >> n;
+    int original = n; //storing original after inputing n
+
+    while(n!=0){
+        int ld = n % 10;
+        sum = sum + (ld*ld*ld);
+        n /= 10;
+        
+    }
+    if(sum == original) cout << "yes! no. is an Armstrong" << endl;
+    else cout << "Not an Armstrong" << endl;
+    
+    return 0;
+}*/
+
+////////// print all divisors of a number  /////////
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+
+    for(int i=1; i<=n; i++){
+        if(n%i==0) cout << i << " ";
+    }
     return 0;
 }
