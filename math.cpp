@@ -58,7 +58,7 @@ int main() {
 }*/
 
 ///////// reverse of a number ///////
-#include <iostream>
+/* #include <iostream>
 using namespace std;
 int reverse(int n){
     int rev = 0;
@@ -77,5 +77,31 @@ int main() {
     cin >> n;
 
     cout << reverse(n) << endl;
+    return 0;
+}*/
+
+
+//////////// palindrome of a number /////////////
+#include <iostream>
+using namespace std;
+bool palindrome(int n){
+    int rev = 0;
+    int original = n;
+
+    while(n>0){
+        int ld = n % 10;
+        rev = (rev * 10) + ld;
+        n /= 10;
+    }
+    if(rev == original) return true;
+    else return false;
+}
+
+int main() {
+    int n;
+    cout << "Enter n : "; cin >> n;
+    
+    cout << palindrome(n) << endl;
+    
     return 0;
 }
