@@ -247,12 +247,84 @@ void pattern2(int n){
     }
 }
 
+void pattern3(int n){
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=i; j++){
+            cout << j << " ";
+        }
+        cout << endl;
+    }
+}
 
+void pattern4(int n){
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=i; j++){
+            cout << i << " ";
+        }
+        cout << endl;
+    }
+}
+
+void pattern5(int n){
+    for(int i=1; i<=n; i++){
+        for(int j=n; j>=i; j--){
+            cout << "* ";
+        }
+        cout << endl;
+    }
+}
+
+void pattern6(int n){
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=(n-i+1); j++){
+            cout << j << " ";
+        }
+        cout << endl;
+    }
+}
+
+void pattern7(int n){
+    for(int i=0; i<n; i++){
+        
+        for(int j=0; j<(n-i-1); j++){  // inner loop for space1
+            cout << " ";
+        }
+        for(int j=0; j<(2*i+1); j++){  // inner loop for stars(*)
+            cout << "*";
+        }
+        for(int j=0; j<(n-i-1); j++){  // inner loop for space2
+            cout << " ";
+        }
+        cout << endl;
+    }
+}
+
+void pattern8(int n){
+    for(int i=0; i<n; i++){
+        
+        for(int j=0; j<i; j++){  // inner loop for space1
+            cout << " ";
+        }
+        for(int j=0; j<(2*n - (2*i+1)); j++){  // inner loop for stars(*)
+            cout << "*";
+        }
+        for(int j=0; j<i; j++){  // inner loop for space2
+            cout << " ";
+        }
+        cout << endl;
+    }
+}
 int main() {
     int n;
     cout << "Enter n : ";
     cin >> n;
     // pattern1(n);   // square of *
-    pattern2(n);
+    // pattern2(n);   // right-angled of *
+    // pattern3(n);   // ,, of (1-12-123-1234-n)
+    // pattern4(n);   // ,, 0f (1-22-333-4444-n)
+    // pattern5(n);   // inverted right angled triangle
+    // pattern6(n);   // ,, of (12345-1234-123-12-1)
+     pattern7(n);   // pyramid
+     pattern8(n);   // inverted pyramid
     return 0;
 }
