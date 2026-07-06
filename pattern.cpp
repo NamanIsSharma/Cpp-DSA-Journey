@@ -326,5 +326,8 @@ int main() {
     // pattern6(n);   // ,, of (12345-1234-123-12-1)
      pattern7(n);   // pyramid
      pattern8(n);   // inverted pyramid
+     // pattern9 (diamond) is 7+6
+    
+
     return 0;
 }
