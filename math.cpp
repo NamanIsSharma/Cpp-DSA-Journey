@@ -128,8 +128,30 @@ int main() {
     return 0;
 }*/
 
-////////// print all divisors of a number  /////////
+// Armstrong Using Function
 #include <iostream>
+using namespace std;
+bool CheckArmstrong(int n){
+    int sum = 0;
+    int original = n;
+
+    while(n>0){
+        int ld = n % 10;
+        sum = sum + (ld*ld*ld);
+        n /= 10;
+    }
+    if(sum == original) return true;
+    else  return false;
+}
+int main() {
+    int n;
+    cin >> n;
+    cout << CheckArmstrong(n);
+    return 0;
+}
+
+////////// print all divisors of a number  /////////
+/* #include <iostream>
 using namespace std;
 
 int main() {
@@ -140,4 +162,4 @@ int main() {
         if(n%i==0) cout << i << " ";
     }
     return 0;
-}
+}*/
