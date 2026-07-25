@@ -129,7 +129,7 @@ int main() {
 }*/
 
 // Armstrong Using Function
-#include <iostream>
+/* #include <iostream>
 using namespace std;
 bool CheckArmstrong(int n){
     int sum = 0;
@@ -148,7 +148,7 @@ int main() {
     cin >> n;
     cout << CheckArmstrong(n);
     return 0;
-}
+}*/
 
 ////////// print all divisors of a number  /////////
 /* #include <iostream>
