@@ -101,7 +101,7 @@ int main() {
 }*/
 
 //////// factorial using recursion ///////
-#include <iostream>
+/* #include <iostream>
 using namespace std;
 int factorial(int n){
     if(n==1) return 1;
@@ -112,5 +112,22 @@ int factorial(int n){
 int main() {
     int n = 5;
     cout << factorial(n);
+    return 0;
+}*/
+
+//////// reverse of an array using recursion  ///////
+#include <iostream>
+using namespace std;
+void revArr(int s, int e){
+    if(s>=e) return;
+
+    swap(arr[s],arr[e])
+    revArr(s+1,e-1);
+}
+
+int main() {
+    int arr[] = {12,34,10,6,54};
+
+    revArr(0,e-1);
     return 0;
 }
