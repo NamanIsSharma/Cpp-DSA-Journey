@@ -17,17 +17,20 @@ int main() {
 }*/
 
 /// printing name using recursion ///
-/* #include <iostream>
+/*#include <iostream>
 using namespace std;
-int n = 0;
-void name(){
-    if(n==5) return;
+void printName(int i, int n){
+    if(i>n) return; //Base Case
+
     cout << "Naman" << endl;
-    n++;
-    name();
+
+    printName(i+1,n); //increment in i for again checking the base case
 }
+
 int main() {
-    name();
+    int n;
+    cin >> n;
+    printName(1,n);
     return 0;
 }*/
 
@@ -116,7 +119,7 @@ int main() {
 }*/
 
 //////// reverse of an array using recursion  ///////
-#include <iostream>
+/* #include <iostream>
 using namespace std;
 void revArr(int s, int e){
     if(s>=e) return;
@@ -130,4 +133,6 @@ int main() {
 
     revArr(0,e-1);
     return 0;
-}
+}*/
+
+
