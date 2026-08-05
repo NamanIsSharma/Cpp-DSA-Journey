@@ -48,7 +48,7 @@ int main() {
 
 //////// print second largest no from array (optimal approach with T.C = O(N))
 
-#include <iostream>
+/* #include <iostream>
 using namespace std;
 
 int main() {
@@ -68,5 +68,28 @@ int main() {
         }
     }
     cout << s_largest;
+    return 0;
+}*/
+
+////////// check if array is sorted (non desecnding order)
+#include <iostream>
+using namespace std;
+bool sorted_array(int arr[], int n){
+    for(int i=1; i<n; i++){  // we start i from 1, so that i-1 can compare it with a[0]
+        if(arr[i] >= arr[i-1]){
+
+        }
+        else{
+            return false;
+        }
+    }
+    return true;
+}
+
+int main() {
+    int n = 6;
+    int arr[] = {1,2,3,4,4,5};
+
+    cout << sorted_array(arr, n);
     return 0;
 }
