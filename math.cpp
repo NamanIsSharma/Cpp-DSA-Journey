@@ -167,6 +167,6 @@ int main() {
 using namespace std;
 
 int main() {
-    cout << "hello strrrr";
+    cout << "hello strrrr\nhello NIET";
     return 0;
 }
