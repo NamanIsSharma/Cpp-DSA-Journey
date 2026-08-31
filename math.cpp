@@ -165,8 +165,17 @@ int main() {
 }*/
 #include <iostream>
 using namespace std;
+int sum_N(int n){
+    int sum = 0;
+    for(int i=0; i<n; i++){
+        sum += i;
+    }
+    return sum;
+}
 
 int main() {
-    cout << "hello strrrr\nhello NIET";
+    int n,i;
+    cin>>n;
+    cout<<sum_N(n);
     return 0;
 }
