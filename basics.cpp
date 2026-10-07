@@ -102,7 +102,7 @@ int main() {
 }*/
 
 
-#include <iostream>
+/*#include <iostream>
 #include <string.h>
 using namespace std;
 
@@ -111,5 +111,42 @@ int main() {
     int len = s.size();
     s[len-1] = 'k';
     cout << s[len-1];
+    return 0;
+}*/
+
+////////// pointers //////
+/*#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 10;
+    cout << &a <<"\n";  // use of '&'
+
+    int* ptr = &a;
+    cout << ptr <<"\n";
+    cout << &ptr << "\n";
+
+    int** ptr2 = &ptr;
+    cout << ptr2;
+    return 0;
+}*/
+
+/*#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 98;
+    cout << *(&a); // use of derefrence '*'
+    return 0;
+}*/
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 10;
+    int* p = &a;
+    cout <<p<<"\n";
+    cout << *p;
     return 0;
 }
