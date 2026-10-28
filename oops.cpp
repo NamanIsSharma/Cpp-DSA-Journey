@@ -24,6 +24,7 @@ using namespace std;
 int main() {
     cout << "Tu zaroori sa hai mujhko, zinda rehne ke liye";
     cout << "\nHey buddy\n";
-    cout << "maka laadli beham mein na rahiye, maka maanas maare jaa yahan";
+    cout << "maka laadli beham mein na rahiye, maka maanas maare jaa yahan\n";
+    cout << "Meow laadli, ghop-ghop-ghop";
     return 0;
 }
